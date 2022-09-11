@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdiTech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="menu-bar">
+            <div class="logo">
+                <b> AdiTech </b>
+            </div>
+            <div class="menu-right">
+                <SPAN class="red" onclick="myfunction()">
+                    &#9776;
+                </SPAN>
+                <ul id="mar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="LOGIN.HTML">Login</a></li>
+                    <li><a href="LOGIN.HTML">Sign up</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <main class="hee">
+            <section>
+                <h1>
+                    Welcome To <span class="orange"> Aditech</span>
+                </h1>
+                <p class="cut">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ex eos impedit nemo nobis deserunt nihil, aliquid illo voluptatibus minus? Debitis animi hic, error sint molestias sit saepe, esse cum repudiandae commodi temporibus consequatur dolore.
+
+                </p>
+                <button class="btn">Explore</button>
+            </section>
+
+        </main>
+    </header>
+    <div class="videos">
+        <h2 class="primary"> Recommended Images</h2>
+        <div class="box">
+            <div class="box2">
+                <img src="./iiimg.jpg" alt="bg" width="320" height="215">
+            </div>
+
+            <div class="box3">
+                <img src="./iiimg.jpg" alt="bg" width="320" height="215">
+            </div>
+
+            <div class="box4">
+                <img src="./iiimg.jpg" alt="bg" width="320" height="215">
+            </div>
+
+
+        </div>
+        <footer class="foot">
+            Copyright &copy; www.aditech.com.All Rights Reserved
+        </footer>
+
+    </div>
+
+    <script>
+        function myfunction() {
+            var x = document.getElementById("mar");
+            if (x.style.display == "block") {
+                x.style.display = "none";
+            }
+            else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

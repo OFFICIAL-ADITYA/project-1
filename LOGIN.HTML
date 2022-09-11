@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN AND REGISTER</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+              <div class="button-btn">
+                <div id="btn">
+
+                </div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+              </div>
+              <div class="image-form">
+              <a href="https://www.facebook.com/login/" target="_blank">
+                <img src="/fb-removebg-preview-removebg-preview.png">
+              </a>
+               
+              <a href="https://accounts.google.com/signin/v2/signinchooser?rart=ANgoxcdbbNxH1nYXChBQ7n_DhSet9sRm1XXzUFTdrodQQJThJv3oPCktvjFuZq-YDK8WsXHW_gXYeU7G-XB1iBPG0qMJAeBgcA&TL=AKqFyY-8N5-G2XDzDlPv7g-rb7vfes-nGA4vo6Z5QVfS5c9gus5d9v74LqAUzf1F&flowName=GlifWebSignIn&cid=1&flowEntry=ServiceLogin" target="_blank">
+                <img src="/goo.png">
+              </a>
+              <a href="https://twitter.com/i/flow/login" target="_blank">
+                <img src="/twitter-removebg-preview.png" >
+              </a>
+              </div>
+              <form class="form2" id="login">
+                <input type="text" class="form-field" placeholder="Username" required>
+                <input type="password" class="form-field" placeholder="Password" required>
+                <input type="checkbox" class="checkbox"><span>Remember Password </span>
+                <button type="submit" class="submit">LogIn</button>
+              </form>
+              <form class="form2" id="register">
+                <input type="text" class="form-field" placeholder="Username" required>
+                <input type="email" class="form-field" placeholder="Email Address" required>
+                <input type="password" class="form-field" placeholder="Password" required>
+                <input type="checkbox" class="checkbox"><span>I accept to the Terms and Conditions</span>
+                <button type="submit" class="submit">Register</button>
+              </form>
+             
+        </div>
+    </div>
+   
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+      function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+      }
+    </script>
+    
+</body>
+</html>
