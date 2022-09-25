@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-image: url(../bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.menu-bar {
+    background: black;
+    width: 100%;
+
+    height: 11vh;
+    position: relative;
+    align-items: center;
+    display: flex;
+
+
+
+}
+
+ul {
+    display: inline;
+    overflow: hidden;
+}
+
+ul li {
+    display: inline;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    right: 0;
+    list-style: none;
+    cursor: pointer;
+    /* background: #000; */
+
+
+
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+
+.logo {
+
+    margin: 23px 22px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    font-size: 39px;
+    color: chocolate;
+
+}
+
+.menu-right {
+    width: 100%;
+    display: inline;
+    list-style: none;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: relative;
+    padding: 10px;
+
+
+}
+
+.menu-right a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+
+
+}
+
+.menu-right a:hover {
+    background: white;
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 28px;
+    transition: 0.2s;
+
+}
+
+.menu-right a::before {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+
+.menu-right a::before {
+    background: white;
+    color: black;
+}
+
+/* main section start */
+
+section {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px 333px;
+    text-align: center;
+    overflow: hidden;
+}
+
+section h1 {
+    font-size: 3.2rem;
+    padding: 20px;
+    color: white;
+
+}
+
+section .orange {
+    color: chocolate;
+}
+
+section .cut {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.btn {
+    font-size: 1.2rem;
+    top: 0;
+    padding: 5px;
+    margin: 22px;
+    border-radius: 22px;
+    width: 100px;
+    background: aqua;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+.videos {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos .primary {
+    font-size: 2.8rem;
+    margin: 20px;
+}
+
+.videos .box {
+
+    margin: 3px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* .videos .box iframe {
+    height: 215px;
+    margin: auto;
+    display: block;
+} */
+
+.videos .box2 {
+    border: 2px solid white;
+    margin: 3px 6px;
+    padding: 20px;
+}
+
+.videos .box3 {
+    border: 2px solid white;
+    margin: 3px 6px;
+    padding: 20px;
+}
+
+.videos .box4 {
+    border: 2px solid white;
+    margin: 3px 6px;
+    padding: 20px;
+}
+
+nav .menu-btn i {
+    color: #fff;
+}
+
+.red {
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+    text-align: right;
+    float: right;
+    margin: 6px 37px;
+}
+
+.foot {
+    background: #000;
+    width: 98%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    overflow: hidden;
+    height: 10px;
+
+}
+
+@media (min-width: 1024px) {
+    section h1 {
+        color: #fff;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .red {
+        display: block;
+        top: 0;
+        right: 100px;
+    }
+
+    .hee {
+        height: 33vh;
+
+    }
+
+    .menu-bar {
+        display: block;
+        height: 6vh;
+    }
+
+    ul {
+        width: 100%;
+        background-color: rgb(56, 59, 59);
+        display: none;
+    }
+
+    ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 60px;
+    }
+
+    .logo {
+        margin: 10px 60px;
+    }
+
+    .menu-right a:hover {
+        border-radius: 0;
+        width: 100%;
+        color: aqua;
+    }
+
+    section {
+        display: inline;
+        text-align: center;
+        overflow: hidden;
+        box-sizing: border-box;
+        word-spacing: 9px;
+    }
+
+    section .cut {
+        margin: 20px;
+    }
+
+    section .btn {
+        display: inline;
+        text-align: center;
+        width: 17%;
+        overflow: hidden;
+        margin-left: 326px;
+        box-sizing: border-box;
+    }
+
+    .videos .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+
+    }
+
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .red {
+        display: block;
+        top: 0;
+        right: 100px;
+    }
+
+    .logo {
+        margin: 16px 46px;
+
+    }
+
+    .menu-bar {
+        display: block;
+        height: 70px
+    }
+
+    section .cut {
+        margin: 20px;
+    }
+
+    .foot {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        height: auto;
+    }
+
+    ul {
+        width: 100%;
+        background-color: rgb(56, 59, 59);
+        display: none;
+    }
+
+
+    ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 70px;
+    }
+
+
+    .menu-right a:hover {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    section {
+        display: inline;
+        text-align: center;
+        overflow: hidden;
+        box-sizing: border-box;
+
+
+    }
+
+    section .btn {
+        display: inline;
+        text-align: center;
+        width: 32%;
+        overflow: hidden;
+        margin-left: 134px;
+        box-sizing: border-box;
+    }
+
+    .btn::before {
+        width: 0;
+        display: flex;
+    }
+
+    .videos .primary {
+        font-size: 2.5rem;
+        display: inline;
+        text-align: center;
+    }
+
+    .videos .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+
+    }
+}
